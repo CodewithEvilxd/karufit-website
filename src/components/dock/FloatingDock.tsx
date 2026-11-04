@@ -23,9 +23,16 @@ export const FloatingDock: React.FC = () => {
   useEffect(() => {
     const handleScroll = () => {
       // Show dock once user scrolls past hero section (~380px)
-      setVisible(window.scrollY > 380);
+      // Automatically hide when user reaches the footer so it never obstructs footer artwork
+      const scrollY = window.scrollY;
+      const windowHeight = window.innerHeight;
+      const documentHeight = document.documentElement.scrollHeight;
+      const isNearFooter = scrollY + windowHeight >= documentHeight - 160;
+
+      setVisible(scrollY > 380 && !isNearFooter);
     };
-    window.addEventListener('scroll', handleScroll);
+    window.addEventListener('scroll', handleScroll, { passive: true });
+    handleScroll();
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 

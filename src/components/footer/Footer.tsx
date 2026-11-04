@@ -417,50 +417,50 @@ const GIANT_TYPOGRAPHY_STICKERS: VinylStickerConfig[] = [
   {
     id: 'star-smiley',
     Component: StarSmileySticker,
-    positionClass: 'left-[1%] top-[6%]',
-    sizeClass: 'w-7 h-7 sm:w-9 sm:h-9 md:w-11 md:h-11',
+    positionClass: 'left-[2%] top-[18%]',
+    sizeClass: 'w-6 h-6 sm:w-7 sm:h-7 md:w-8 md:h-8',
     initialRotate: -9,
   },
   {
     id: 'blueberries',
     Component: BlueberrySticker,
-    positionClass: 'left-[17%] top-[36%]',
-    sizeClass: 'w-7 h-7 sm:w-8 sm:h-8 md:w-10 md:h-10',
+    positionClass: 'left-[18%] top-[54%]',
+    sizeClass: 'w-5.5 h-5.5 sm:w-6.5 sm:h-6.5 md:w-7.5 md:h-7.5',
     initialRotate: 7,
   },
   {
     id: 'video-clapper',
     Component: VideoClapperSticker,
-    positionClass: 'left-[33%] top-[10%]',
-    sizeClass: 'w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12',
+    positionClass: 'left-[34%] top-[34%]',
+    sizeClass: 'w-6 h-6 sm:w-7.5 sm:h-7.5 md:w-8.5 md:h-8.5',
     initialRotate: -6,
   },
   {
     id: 'flame',
     Component: FlameSticker,
-    positionClass: 'left-[49%] top-[20%]',
-    sizeClass: 'w-6 h-6 sm:w-8 sm:h-8 md:w-9 md:h-9',
+    positionClass: 'left-[49%] top-[42%]',
+    sizeClass: 'w-5 h-5 sm:w-6 sm:h-6 md:w-7 md:h-7',
     initialRotate: 8,
   },
   {
     id: 'keytag',
     Component: KeyTagSticker,
-    positionClass: 'left-[65%] top-[12%]',
-    sizeClass: 'w-7 h-10 sm:w-9 sm:h-13 md:w-10 md:h-15',
+    positionClass: 'left-[64%] top-[22%]',
+    sizeClass: 'w-6 h-8 sm:w-7 sm:h-10 md:w-8 md:h-11',
     initialRotate: -8,
   },
   {
     id: 'polaroid',
     Component: PolaroidSticker,
-    positionClass: 'left-[79%] top-[22%]',
-    sizeClass: 'w-8 h-7 sm:w-10 sm:h-9 md:w-12 md:h-10',
+    positionClass: 'left-[77%] top-[28%]',
+    sizeClass: 'w-6 h-5.5 sm:w-7.5 sm:h-7 md:w-8.5 md:h-7.5',
     initialRotate: 6,
   },
   {
     id: 'cool-cat',
     Component: CatSticker,
-    positionClass: 'right-[0%] top-[6%]',
-    sizeClass: 'w-7 h-7 sm:w-9 sm:h-9 md:w-11 md:h-11',
+    positionClass: 'left-[90%] top-[24%]',
+    sizeClass: 'w-6 h-6 sm:w-7.5 sm:h-7.5 md:w-8.5 md:h-8.5',
     initialRotate: 12,
   },
 ];
@@ -616,26 +616,22 @@ export const Footer: React.FC = () => {
         </div>
       </div>
 
-      {/* 2. SKY-BLUE GRADIENT STAGE WITH COMPACT HEIGHT & WIDE/LAMBA NAME */}
-      <div className="relative w-full overflow-hidden flex flex-col items-center justify-end select-none pt-6 sm:pt-8 pb-3 sm:pb-4">
+      {/* 2. SKY-BLUE GRADIENT STAGE WITH COMPACT HEIGHT & ELONGATED/WIDE NAME */}
+      <div className="relative w-full overflow-hidden flex flex-col items-center justify-end select-none pt-2 sm:pt-3 pb-1 sm:pb-2">
         {/* Atmospheric Sky Backdrop Gradient (Exact from video) */}
         <div
           className="absolute inset-0 pointer-events-none"
           style={{
             background:
-              'linear-gradient(180deg, transparent 0%, rgba(219,234,254,0.3) 30%, #93C5FD 70%, #4B96FD 100%)',
+              'linear-gradient(180deg, transparent 0%, rgba(219,234,254,0.3) 25%, #93C5FD 65%, #3B82F6 100%)',
           }}
         />
 
-        {/* Text + Small Sticker Canvas */}
+        {/* Text + Small Die-Cut Letter Stickers Canvas */}
         <div className="relative inline-block mx-auto leading-none select-none px-4 sm:px-8">
           {/* Wide / Lamba Stretched White "KaruFit" Typography */}
           <h2
-            className="font-display font-black text-6xl sm:text-7xl md:text-8xl lg:text-[115px] xl:text-[135px] leading-none tracking-[0.14em] sm:tracking-[0.18em] text-white select-none pointer-events-none"
-            style={{
-              filter:
-                'drop-shadow(0 12px 24px rgba(29, 78, 216, 0.28)) drop-shadow(0 2px 4px rgba(0, 0, 0, 0.08))',
-            }}
+            className="font-display font-black text-6xl sm:text-7xl md:text-8xl lg:text-[115px] xl:text-[135px] leading-none tracking-[0.20em] sm:tracking-[0.25em] md:tracking-[0.30em] text-white select-none pointer-events-none drop-shadow-[0_10px_20px_rgba(29,78,216,0.32)]"
           >
             KaruFit
           </h2>
